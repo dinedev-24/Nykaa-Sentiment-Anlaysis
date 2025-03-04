@@ -6,11 +6,18 @@ import seaborn as sns
 import plotly.express as px
 from wordcloud import WordCloud
 from transformers import BertTokenizer, BertForSequenceClassification
+import os
+os.system("pip install numpy==1.23.5")
 
 # Load BERT model and tokenizer
 MODEL_PATH = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(MODEL_PATH)
-model = BertForSequenceClassification.from_pretrained(MODEL_PATH, num_labels=3)
+model = BertForSequenceClassification.from_pretrained(
+    "bert-base-uncased",
+    num_labels=3,
+    ignore_mismatched_sizes=True
+)
+
 
 # Define sentiment labels
 label_mapping = {0: "Negative", 1: "Neutral", 2: "Positive"}

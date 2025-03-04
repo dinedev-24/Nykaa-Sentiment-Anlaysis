@@ -7,7 +7,8 @@ import plotly.express as px
 from wordcloud import WordCloud
 from transformers import BertTokenizer, BertForSequenceClassification
 import os
-os.system("pip install setuptools==58.0.4 pip numpy==1.23.5")
+os.system("pip install --upgrade setuptools pip numpy==1.23.5 torch==2.2.0+cpu -f https://download.pytorch.org/whl/torch_stable.html")
+
 
 
 # Load BERT model and tokenizer

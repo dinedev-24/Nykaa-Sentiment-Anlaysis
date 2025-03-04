@@ -6,3 +6,4 @@ seaborn
 matplotlib
 plotly
 wordcloud
+numpy==1.23.5

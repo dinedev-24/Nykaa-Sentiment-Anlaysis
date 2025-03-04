@@ -1,9 +1,9 @@
 streamlit
 torch==2.2.0 --index-url https://download.pytorch.org/whl/cpu
+numpy==1.23.5
 transformers
 pandas
 seaborn
 matplotlib
 plotly
 wordcloud
-numpy==1.23.5

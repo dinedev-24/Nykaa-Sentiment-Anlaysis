@@ -3,7 +3,7 @@ import pandas as pd
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 import matplotlib.pyplot as plt
-import seab as sns
+import seaborn as sns
 
 # Load BERT model and tokenizer
 MODEL_PATH = "bert-base-uncased"

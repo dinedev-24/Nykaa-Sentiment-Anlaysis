@@ -7,7 +7,7 @@ import plotly.express as px
 from wordcloud import WordCloud
 from transformers import BertTokenizer, BertForSequenceClassification
 import os
-os.system("pip install numpy==1.23.5")
+os.system("pip install setuptools>=58.0.4 pip")
 
 # Load BERT model and tokenizer
 MODEL_PATH = "bert-base-uncased"

@@ -1,6 +1,6 @@
 pip>=24.0
 setuptools>=75.0.0
-wheel>=0.38.4  # Ensuring latest stable version
+wheel
 numpy>=1.26.0
 pandas==2.2.3
 streamlit==1.25.0
@@ -42,6 +42,6 @@ huggingface-hub<1.0,>=0.11.0
 pyyaml>=5.1
 regex!=2019.12.17
 tqdm>=4.27
-tokenizers>=0.12.1,<0.14 --prefer-binary
 
-
+# Fixing tokenizers issue (ensuring compatibility with Transformers)
+tokenizers>=0.12.1,<0.14

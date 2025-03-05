@@ -1,3 +1,5 @@
+pip install --upgrade pip setuptools wheel
+
 pip>=24.0
 setuptools>=75.0.0
 wheel
@@ -5,7 +7,7 @@ numpy>=1.26.0
 pandas==2.2.3
 streamlit==1.25.0
 torch==2.2.0
-transformers==4.28.1
+transformers==4.26.1  # Downgraded for compatibility
 seaborn==0.13.2
 matplotlib==3.10.1
 plotly==6.0.0
@@ -17,7 +19,6 @@ altair<6,>=4.0
 blinker<2,>=1.0.0
 cachetools<6,>=4.0
 click<9,>=7.0
-importlib-metadata<7,>=1.4
 packaging<24,>=16.8
 pillow==9.5.0  # Ensures compatibility
 protobuf<5,>=3.20
@@ -43,4 +44,4 @@ huggingface-hub<1.0,>=0.11.0
 pyyaml>=5.1
 regex!=2019.12.17
 tqdm>=4.27
-tokenizers==0.13.1
+tokenizers==0.13.1  # Ensures compatibility

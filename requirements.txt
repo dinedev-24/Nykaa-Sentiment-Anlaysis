@@ -1,5 +1,6 @@
 pip>=24.0
 setuptools>=75.0.0
+streamlit>=1.30.0
 pillow>=7.1.0,<10  # Ensures compatibility with Streamlit
 wheel
 streamlit==1.25.0

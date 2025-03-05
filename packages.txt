@@ -1,3 +1,2 @@
-libjpeg-dev
-libpng-dev
-zlib1g-dev
+build-essential
+cargo

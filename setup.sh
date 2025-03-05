@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Upgrade pip and install necessary dependencies
-pip install --upgrade pip setuptools wheel
+pip install setuptools wheel pip --upgrade
+
 
 # Install Rust for tokenizers
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

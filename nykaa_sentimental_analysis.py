@@ -9,6 +9,15 @@ import plotly.express as px
 from wordcloud import WordCloud
 from transformers import BertTokenizer, BertForSequenceClassification
 
+import subprocess
+
+# Upgrade pip, setuptools, and wheel
+subprocess.run(["pip", "install", "--upgrade", "pip", "setuptools", "wheel"], check=True)
+
+# Force binary install of tokenizers before transformers
+subprocess.run(["pip", "install", "tokenizers --prefer-binary"], check=True)
+
+
 # ✅ Set Streamlit page config
 st.set_page_config(page_title="Nykaa Sentiment Analysis", layout="wide")
 

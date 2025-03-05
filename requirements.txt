@@ -1,8 +1,6 @@
-pip install --upgrade pip setuptools wheel
-
 pip>=24.0
 setuptools>=75.0.0
-wheel
+wheel>=0.38.4  # Ensuring latest stable version
 numpy>=1.26.0
 pandas==2.2.3
 streamlit==1.25.0

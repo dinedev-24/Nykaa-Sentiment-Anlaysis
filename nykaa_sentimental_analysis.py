@@ -7,6 +7,7 @@ import plotly.express as px
 from wordcloud import WordCloud
 from transformers import BertTokenizer, BertForSequenceClassification
 import os
+os.system("pip install tokenizers==0.12.1 --no-cache-dir")
 
 # Set page config before UI elements
 st.set_page_config(page_title="Nykaa Sentiment Analysis", layout="wide")

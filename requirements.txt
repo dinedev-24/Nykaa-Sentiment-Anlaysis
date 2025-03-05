@@ -5,10 +5,10 @@ numpy>=1.26.0
 pandas==2.2.3
 streamlit==1.25.0
 torch==2.2.0
-# Force an older version of tokenizers with pre-built wheels
-tokenizers==0.10.3  
-# Use a compatible version of transformers
-transformers==4.21.3  
+# Use a stable transformers version that works without Rust issues
+transformers==4.31.0  
+# This version has pre-built wheels, avoids Rust dependency
+tokenizers==0.13.2  
 seaborn==0.13.2
 matplotlib==3.10.1
 plotly==6.0.0

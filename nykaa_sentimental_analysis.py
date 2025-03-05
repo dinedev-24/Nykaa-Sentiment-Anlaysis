@@ -11,13 +11,13 @@ from transformers import BertTokenizer, BertForSequenceClassification
 
 import subprocess
 
-# Ensure pip, setuptools, and wheel are up-to-date
+# Ensure pip, setuptools, and wheel are updated
 subprocess.run(["pip", "install", "--upgrade", "pip", "setuptools", "wheel"], check=True)
 
-# Install tokenizers separately as a prebuilt wheel (avoid building from source)
+# Install tokenizers **without building from source**
 subprocess.run(["pip", "install", "--prefer-binary", "tokenizers"], check=True)
 
-# Install all other dependencies
+# Install the rest of the dependencies
 subprocess.run(["pip", "install", "-r", "requirements.txt", "--no-cache-dir"], check=True)
 
 

@@ -1,19 +1,11 @@
-pip>=24.0
-setuptools>=75.0.0
 streamlit==1.25.0
-pillow==9.5.0
-torch==2.2.0
-transformers==4.31.0
-tokenizers>=0.11.1,<0.14  # Ensure binary compatibility
-seaborn==0.13.2
-matplotlib==3.10.1
-plotly==6.0.0
-wordcloud==1.9.4
-pandas==2.2.3
-numpy>=1.26.0
-altair<6,>=4.0
-requests<3,>=2.18
-protobuf<5,>=3.20
-pyyaml>=5.1
-regex!=2019.12.17
-tqdm>=4.27
+setuptools==58.0.4
+pip==23.0
+numpy==1.23.5
+torch==2.2.0+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+transformers==4.35.0
+pandas
+seaborn
+matplotlib
+plotly
+wordcloud

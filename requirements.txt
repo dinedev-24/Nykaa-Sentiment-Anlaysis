@@ -5,7 +5,7 @@ numpy>=1.26.0
 pandas==2.2.3
 streamlit==1.25.0
 torch==2.2.0
-transformers==4.26.1  # Downgraded for compatibility
+transformers==4.26.1
 seaborn==0.13.2
 matplotlib==3.10.1
 plotly==6.0.0
@@ -18,7 +18,7 @@ blinker<2,>=1.0.0
 cachetools<6,>=4.0
 click<9,>=7.0
 packaging<24,>=16.8
-pillow==9.5.0  # Ensures compatibility
+pillow==9.5.0
 protobuf<5,>=3.20
 pyarrow>=6.0
 pympler<2,>=0.9
@@ -43,5 +43,5 @@ pyyaml>=5.1
 regex!=2019.12.17
 tqdm>=4.27
 
-# Fixing tokenizers issue (ensuring compatibility with Transformers)
-tokenizers>=0.12.1,<0.14
+# Fix Tokenizers issue (force install prebuilt wheel)
+tokenizers==0.12.1
